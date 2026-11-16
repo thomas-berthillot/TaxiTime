@@ -52,7 +52,7 @@ for x in files:
                     chunk['TaxiOut'] = pd.to_numeric(chunk['TaxiOut'], errors='coerce')
                     chunk['Cancelled'] = pd.to_numeric(chunk['Cancelled'], errors='coerce')
                     chunk = chunk[(chunk['Origin'] == "JFK") & (chunk["Cancelled"] == 0) & (chunk["TaxiOut"].notna())]
-                    chunk = chunk.dropna(axis=0, how='any')
+                    #chunk = chunk.dropna(axis=0, how='any')
 
                     chunk.to_csv(OUTPUT_FILE, sep=',', encoding='utf-8', index=False, header=header, mode='a', columns=COLUMNS)
                     header = False

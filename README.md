@@ -1,4 +1,3 @@
-```markdown
 # TaxiTime
 
 **Personal project — Machine Learning & Data Analysis**
@@ -104,5 +103,3 @@ Raw datasets and the Python virtual environment are kept outside the Git reposit
 - [ ] Train baseline and regression models
 - [ ] Evaluate and compare model performance
 - [ ] Document final results
-
-```
